@@ -35,7 +35,7 @@ object driver {
     val sparkSession = SparkSession.builder().config(sparkConf).getOrCreate()
     import sparkSession.implicits._
 
-    val fileLocation = "/Users/tkmaipe/Downloads/diabeties.csv"
+    val fileLocation = "/path here/Downloads/diabeties.csv"
     val colsToSelect = Array("diabetes", "skin", "test", "age")
     val df = sparkSession.read
       .option("header", "true")
