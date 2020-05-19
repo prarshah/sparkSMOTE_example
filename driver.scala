@@ -17,10 +17,8 @@ object driver {
       }
     }.toMap
 
-    // read in general inputs
-    val inputDirectory = configuration.getOrElse("inputDirectory", "")
-    //todo remove this
-    val outputDirectory = configuration.getOrElse("outputDirectory", "")
+ 
+    // input 
     val numFeatures = configuration.getOrElse("numFeatures", "0").toInt
     val oversamplingPctg =
       configuration.getOrElse("oversamplingPctg", "1.0").toDouble
