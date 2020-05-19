@@ -48,9 +48,7 @@ object driver {
 
     val outputDf = SMOTE
       .runSMOTE(
-        df,
-        inputDirectory,
-        outputDirectory,
+        df, // dataframe
         numFeatures,
         oversamplingPctg,
         kNN,
